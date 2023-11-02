@@ -1,0 +1,15 @@
+package com.company.books.backend.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.company.books.backend.response.LibroResponseRest;
+
+public class LibroServiceImpl implements ILibroService {
+
+	@Override
+	public ResponseEntity<LibroResponseRest> buscarLibros() {
+		
+		return null;
+	}
+	
+}

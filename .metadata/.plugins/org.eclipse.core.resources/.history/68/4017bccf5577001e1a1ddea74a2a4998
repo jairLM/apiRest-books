@@ -1,0 +1,14 @@
+package com.company.books.backend.service;
+
+import org.mockito.Mock;
+
+import com.company.books.backend.model.dao.ICategoriaDao;
+
+public class CategoriaServiceImplTest {
+
+	CategoriaServiceImpl service;
+	
+	@Mock
+	ICategoriaDao categoriaDao;
+	
+}

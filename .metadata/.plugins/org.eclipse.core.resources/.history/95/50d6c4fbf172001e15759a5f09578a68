@@ -1,0 +1,21 @@
+package com.company.books.backend.response;
+
+import java.util.*;
+
+import com.company.books.backend.model.Libro;
+public class LibroResponse {
+	
+	private List<Libro> libro;
+
+	public List<Libro> getCategoria() {
+		return libro;
+	}
+
+	public void setCategoria(List<Libro> libro) {
+		this.libro = libro;
+	}
+	
+	
+	
+	
+}

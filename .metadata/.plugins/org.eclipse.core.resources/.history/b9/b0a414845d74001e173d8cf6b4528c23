@@ -1,0 +1,35 @@
+package com.company.books.backend.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+public class ConfigSecurity {
+
+	@Bean
+	public InMemoryUserDetailsManager userDetailsManager() {
+		
+		UserDetails jair = User.builder().username("Jair").password("{noop}jair123").roles("Empleado", "Jefe").build();
+		UserDetails agustin = User.builder().username("Agustin").password("{noop}agustin123").roles("Empleado").build();
+		return new InMemoryUserDetailsManager(jair, agustin);
+	}
+	
+	@Bean
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+		
+		http.authorizeHttpRequests( configure -->{
+			
+			configure.req
+			
+			})
+		
+	}
+	
+	
+	
+}

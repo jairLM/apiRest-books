@@ -1,0 +1,20 @@
+package com.company.books.backend.ejemplo.junit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CalculadoraTest {
+	
+	@Test
+	public void calculadoraAssertEqualTest() {
+		Calculadora calc = new Calculadora();
+		
+		assertEquals(2, calc.sumar(1, 1));
+		assertEquals(3, calc.restar(4, 1));
+		assertEquals(25, calc.multiplicar(5, 5));
+		assertEquals(10, calc.dividir(100, 10));
+	}
+	
+	
+}

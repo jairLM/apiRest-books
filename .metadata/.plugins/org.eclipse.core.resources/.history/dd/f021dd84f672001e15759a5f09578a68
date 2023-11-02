@@ -1,0 +1,27 @@
+package com.company.books.backend.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.company.books.backend.response.LibroResponseRest;
+import com.company.books.backend.service.ILibroService;
+
+@RequestMapping("/v1")
+public class LibroRestController  {
+	
+	@Autowired
+	ILibroService service;
+	
+	@GetMapping("/libros")
+	public ResponseEntity<LibroResponseRest> consultaCat(){
+		
+		ResponseEntity<LibroResponseRest> response = service.buscarLibros();
+		
+		return response;
+		
+	}
+	
+	
+}
