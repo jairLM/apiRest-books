@@ -11,12 +11,12 @@ logging.level.org.hibernate.SQL=debug
 
 #spring security
 
-spring.security.user.name=jair
-spring.security.user.password=jair123
+#spring.security.user.name=jair
+#spring.security.user.password=jair123
 
 
 #swagger configuration
-springdoc.swagger-ui.enabled=true
-springdoc.api-docs.enabled=true
-springdoc.swagger-ui.path=/swagger-ui.html
+#springdoc.swagger-ui.enabled=true
+#springdoc.api-docs.enabled=true
+#springdoc.swagger-ui.path=/swagger-ui.html
 
